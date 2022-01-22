@@ -1,0 +1,30 @@
+.gradient-box{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  
+}
+
+.gradient1{
+  background-image: linear-gradient(purple 80%, blue);
+}
+
+.gradient2{
+  background-image: linear-gradient(to right, purple, blue);
+}
+
+.gradient3{
+  background-image: linear-gradient(to left, purple, blue);
+}
+
+.gradient4{
+  background-image: linear-gradient(to top, purple, blue);
+}
+
+.gradient5{
+  background-image: linear-gradient(to top right, purple, blue);
+}
+
+.gradient6{
+  background-image: linear-gradient(to bottom left, purple, blue, red, yellow, black, #123456);
+}
