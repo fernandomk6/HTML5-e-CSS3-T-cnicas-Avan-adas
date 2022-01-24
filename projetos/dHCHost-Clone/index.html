@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hDC Host</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <img src="./img/hdchostlogo.png" alt="hdchostlogo">
+    <nav>
+      <ul>
+        <li><a href="">home</a></li>
+        <li><a href="">planos</a></li>
+        <li><a href="">contato</a></li>
+        <li><a href="" class="btn-action">login</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="main-banner">
+    <div>
+      <h1 id="main-title">hDC Host</h1>
+      <p id="main-discription">Os melhores planos para qualquer tipo de projeto!</p>
+    </div>
+  </section>
+  <section id="about" class="section-container">
+    <div class="section-card">
+      <span class="material-icons-outlined green">
+        verified_user
+      </span>
+      <h3>Segurança</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates assumenda a deleniti aliquam nemo nam excepturi.</p>
+    </div>
+    <div class="section-card">
+      <span class="material-icons-outlined red">
+        rocket_launch
+      </span>
+      <h3>Velocidade</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates assumenda a deleniti aliquam nemo nam excepturi.</p>
+    </div>
+    <div class="section-card">
+      <span class="material-icons-outlined orange">
+        question_answer
+        </span>
+      <h3>Suporte</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates assumenda a deleniti aliquam nemo nam excepturi.</p>
+    </div>
+  </section>
+  <main>
+    <section id="plans">
+      <h2>Planos e Preços</h2>
+      <p class="plan-discription">Selecione o plano perfeito para você<p>
+      <section class="section-container">
+        <div class="section-card">
+          <div class="price">R$15/mês</div>
+          <div class="name">Padrão</div>
+          <div class="content">
+            <p>2GB de espaço em disco</p>
+            <p>10 Sub-domínios</p>
+            <p>25 Contas de e-mail</p>
+            <p>C-panel</p>
+            <p>Suporte 24/7</p>
+          </div>
+          <div class="buttom">Selecionar</div>
+        </div>
+        <div class="section-card">
+          <div class="price">R$30/mês</div>
+          <div class="name">Dedicado</div>
+          <div class="content">
+            <p>5GB de espaço em disco</p>
+            <p>20 Sub-domínios</p>
+            <p>50 Contas de e-mail</p>
+            <p>C-panel</p>
+            <p>Suporte 24/7</p>
+          </div>
+          <div class="buttom">Selecionar</div>
+        </div>
+        <div class="section-card">
+          <div class="price selected">R$50/mês</div>
+          <div class="name">Dedicado Plus</div>
+          <div class="content">
+            <p>20GB de espaço em disco</p>
+            <p>30 Sub-domínios</p>
+            <p>100 Contas de e-mail</p>
+            <p>C-panel</p>
+            <p>Suporte 24/7</p>
+          </div>
+          <div class="buttom selected">Selecionar</div>
+        </div>
+        <div class="section-card">
+          <div class="price">R$100/mês</div>
+          <div class="name">Cloud</div>
+          <div class="content">
+            <p>30GB de espaço em disco</p>
+            <p>200 Sub-domínios</p>
+            <p>200 Contas de e-mail</p>
+            <p>C-panel</p>
+            <p>Suporte 24/7</p>
+          </div>
+          <div class="buttom">Selecionar</div>
+        </div>
+      </section>
+    </section>
+  </main>  
+  <section id="domain-search" class="section-container">
+    <div>
+      <h3>Buscar um domínio</h3>
+      <p>Veja se o domínio que você deseja está disponível</p>
+      <form action="">
+        <input type="text" name="domain" placeholder="Digite seu dominio desejado">
+        <input class="btn-action" type="submit" value="Buscar Dominio">
+      </form>
+    </div>
+  </section>
+  <footer>
+    <section id="contact" class="section-container">
+      <div class="section-card big">
+        <h3>Entre em contato</h3>
+        <p>Mande uma mensagem para nós conversarmos sobre a melhor hospedagem para seu negócio  </p>
+        <form action="">
+          <input type="text" name="name" placeholder="Seu nome">
+          <input type="email" name="email" placeholder="Seu email">
+          <textarea name="message" placeholder="Sua mensagem"></textarea>
+          <input type="submit" class="btn-action" value="Enviar">
+        </form>
+        <p class="autor">Fernando Henrique @2022</p>
+      </div>
+    </section>
+  </footer>
+</body>
+</html>
