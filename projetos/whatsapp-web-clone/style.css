@@ -1,0 +1,268 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#main-container{
+  height: 100vh;
+  display: flex;
+}
+
+#contacts{
+  width: 450px;
+}
+
+#chat{
+  flex: 1 1 auto;
+  background-color: lightgray;
+}
+
+.header{
+  height: 60px;
+  background-color: whitesmoke;
+  border-left: 1px solid lightgray;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact{
+  display: flex;
+  align-items: center;
+}
+
+.picture-perfil{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: lightgray;
+  margin-right: 20px;
+}
+
+.material-icons-outlined{
+  color: darkgrey;
+  font-size: 32px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.material-icons-outlined:hover{
+  color: rgb(146, 146, 146);
+}
+
+.notification{
+  background-color: lightskyblue;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px 20px 10px;
+  height: 100px;
+}
+
+.notification span{
+  font-size: 32px;
+  background-color: #fff;
+  color: lightskyblue;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  text-align: center;
+  margin: 0;
+}
+
+.notification-discription p span{
+  font-size: 20px;
+  margin: 0;
+  color: darkgrey;
+  background-color: transparent;
+  text-align: center;
+  height: 20px;
+  line-height: 20px;
+  width: auto;
+}
+
+.title{
+  font-size: 1rem;
+}
+
+.discription{
+  font-size: 0.8rem;
+}
+
+.search{
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.search form{
+  width: 90%;
+  position: relative;
+}
+
+.search input{
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 20px;
+  height: 40px;
+  outline: none;
+  border: none;
+  padding-left: 60px;
+}
+
+.search .search-icon{
+  position: absolute;
+  left: 3px;
+  top: 0;
+}
+
+.contact-list{
+  padding: 10px;
+  height: 70px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgray;
+}
+
+.contact-list .contact-perfil img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: lightgrey;
+  flex: 1 1 auto;
+}
+
+
+.contact-data{
+  flex: 1 1 auto;
+  margin: 0 20px;
+}
+
+.contact-data span{
+  font-size: 20px;
+  margin: 0;
+  color: lightskyblue;
+  background-color: transparent;
+  text-align: center;
+  height: 20px;
+  line-height: 20px;
+  width: auto;
+}
+
+.message-data{
+  width: 50px;
+  font-size: 0.8rem;
+  color: darkgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.message-data span{
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: lightgreen;
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 3px;
+}
+
+.activated{
+  background-color: lightgrey;
+}
+
+.chat-background{
+  background-image: url(./img/background_whats.png);
+  height: calc(100vh - 120px);
+  position: relative;
+}
+
+.msg1{
+  position: absolute;
+  bottom: 100px;
+  padding: 10px 100px 10px 10px;
+  background-color: white;
+  margin-left: 80px;
+  border-radius: 10px;
+}
+
+.msg2{
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  padding: 10px 100px 10px 10px;
+  background-color: rgb(225, 255, 200);
+  margin-right: 80px;
+  border-radius: 10px;
+}
+
+.opac{
+  width: 100%;
+  height: 100%;
+  background-color: lightgray;
+  opacity: .8;
+}
+
+.message-send{
+  height: 60px;
+  display: flex;
+  background-color: whitesmoke;
+}
+
+.emoji{
+  width: 60px;
+  text-align: center;
+}
+
+.emoji span{
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.message-sand-chat{
+  flex: 1 1 auto;
+}
+
+.message-sand-chat form{
+  width: 100%;
+}
+
+.message-sand-chat input{
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  height: 40px;
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.mic{
+  width: 60px;
+  text-align: center;
+}
+
+.mic span{
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 5px;
+}
