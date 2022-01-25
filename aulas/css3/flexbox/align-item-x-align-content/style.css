@@ -1,0 +1,28 @@
+#align-item{
+  padding: 10px;
+  margin: 10px;
+  background-color: brown;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  height: 200px;
+}
+
+#align-content{
+  padding: 10px;
+  margin: 10px;
+  background-color: burlywood;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: center;
+  height: 200px;
+}
+
+.box{
+  padding: 20px;
+  width: 400px;
+  background-color: cornflowerblue;
+  margin: 5px;
+}
