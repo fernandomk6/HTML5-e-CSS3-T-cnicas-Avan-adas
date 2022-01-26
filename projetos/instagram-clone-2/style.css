@@ -4,22 +4,80 @@
 }
 
 #main-container{
+  display: flex;
+  justify-content: center;
+  background-color: brown;
 }
 
 #main-box{
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
 }
 
 #main-banner{
+  background-color: #fff;
+  flex: 1 1 auto;
+  position: relative;
 }
 
-#main-banner #cel-exterior{
-
-}
-
-#main-banner #cel-interior{
+#main-banner #layer2{
+  position: absolute;
+  top: 100px;
+  left: 150px;
 }
 
 #main-content{
+  background-color: cyan;
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+#login{
+  border: 1px solid black;
+}
+
+#instagram-logo{
+  font-size: 24px;
+}
+
+#login form{
+  display: flex;
+  flex-direction: column;
+}
+
+.input-default{
+  margin: 5px 0;
+  height: 30px;
+  width: 98%;
+  padding: 0 1%;
+}
+
+.input-submit{
+  height: 25px;
+  margin: 10px 0;
+  background-color: lightskyblue;
+  border: none;
+  width: 100%;
+}
+
+.separator{
+  text-align: center;
+  border-top: 1px solid black;
+}
+
+.separator span{
+  top: -10px;
+  position: relative;
+  background-color: cyan;
+  padding: 0 5px;
+}
+
+@media(max-width: 800px){
+  #main-banner{
+    display: none;
+  }
 }
 
 
