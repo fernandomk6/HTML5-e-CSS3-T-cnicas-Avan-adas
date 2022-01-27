@@ -3,10 +3,18 @@
   padding: 0;
 }
 
+body{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  height: 100vh;
+}
+
 #main-container{
   display: flex;
   justify-content: center;
-  background-color: brown;
+  background-color: #fafafa;
+  flex: 1 1 auto;
 }
 
 #main-box{
@@ -16,30 +24,40 @@
 }
 
 #main-banner{
-  background-color: #fff;
+  background-color: #fafafa;
   flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+}
+
+#main-banner #banner-img{
   position: relative;
 }
 
-#main-banner #layer2{
+#main-banner #banner-img #layer2{
   position: absolute;
   top: 100px;
   left: 150px;
 }
 
 #main-content{
-  background-color: cyan;
+  background-color: #fafafa;
   flex: 1 1 auto;
   display: flex;
   flex-flow: column nowrap;
+  justify-content: center;
 }
 
 #login{
-  border: 1px solid black;
+  border: 1px solid lightgray;
+  background-color: #fff;
+  padding: 30px 40px;
 }
 
 #instagram-logo{
   font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 #login form{
@@ -48,10 +66,12 @@
 }
 
 .input-default{
+  border: 1px solid lightgray;
+  outline: none;
   margin: 5px 0;
   height: 30px;
-  width: 98%;
-  padding: 0 1%;
+  width: calc(94% - 2px);
+  padding: 0 3%;
 }
 
 .input-submit{
@@ -59,24 +79,93 @@
   margin: 10px 0;
   background-color: lightskyblue;
   border: none;
+  outline: none;
   width: 100%;
+  color: #fff;
+  font-weight: bold;
 }
 
 .separator{
   text-align: center;
-  border-top: 1px solid black;
+  border-top: 1px solid lightgray;
+  margin: 20px 0;
 }
 
 .separator span{
   top: -10px;
   position: relative;
-  background-color: cyan;
+  background-color: #fff;
   padding: 0 5px;
+  color: darkgray;
+  font-weight: bold;
+}
+
+#create-account{
+  margin-top: 20px;
+  border: 1px solid lightgray;
+  background-color: #fff;
+  padding: 20px 40px;
+}
+
+#create-account span{
+  color: lightskyblue;
+  font-weight: bold;
+}
+
+#get-app{
+  margin-top: 40px;
+  text-align: center;
+}
+
+.get-app-btn-box{
+  margin-top: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.get-app-btn-box img{
+  margin: 5px;
+  width: 130;
+  height: 40px;
+}
+
+footer{
+  background-color: #fafafa;
+}
+
+footer ul li{
+  list-style: none;
+  margin: 10px;
+}
+
+footer ul{
+  max-width: 900px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+footer p {
+  margin: 40px;
+  text-align: center;
 }
 
 @media(max-width: 800px){
   #main-banner{
     display: none;
+  }
+}
+
+@media(max-width: 400px){
+  #main-content{
+    justify-content: space-between;
+  }
+
+  #login, #create-account, #get-app{
+    background-color: transparent;
+    border: none;
   }
 }
 
