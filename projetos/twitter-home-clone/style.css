@@ -1,0 +1,203 @@
+*{
+  font-family: 'roboto';
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container{
+  height: 100vh;
+  background-color: red;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+#main-content{
+  background-color: #000;
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+#banner{
+  background-color: black;
+  flex: 2 1 auto;
+  background-image: url("./img/lohp_1302x955.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#banner img{
+  width: 150px;
+  height: 150px;
+}
+
+main{
+  flex: 1 1 auto;
+  padding: 40px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+#main-box{
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+header i{
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+#main-box h1{
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+  color: darkgray;
+}
+
+#main-box #main-discription{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: darkgray;
+}
+
+#main-box #register{
+  width: 200px;
+  margin: 20px 0;
+}
+
+.btn{
+  display: block;
+  background-color: red;
+  padding: 8px;
+  text-align: center;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: .6rem;
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  margin: 5px 0;
+  width: 100%;
+}
+
+#google-btn{
+  background-color: #fff;
+  border-color: transparent;
+  color: #000;
+}
+
+#apple-btn{
+  background-color: #fff;
+  border-color: transparent;
+  color: #000;
+}
+
+#register-w-phone{
+  background-color: lightskyblue;
+  border-color: transparent;
+  color: #fff;
+}
+
+#enter-btn{
+  background-color: #000;
+  border-color: darkgray;
+  color: lightskyblue;
+}
+
+.separator{
+  border-top: 1px solid darkgray;
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
+.separator span{
+  position: relative;
+  top: -10px;
+  background-color: #000;
+  color: darkgray;
+  padding: 0 10px;
+}
+
+#terms{
+  font-size: .5rem;
+  color: darkgray;
+}
+
+#terms a{
+  font-size: .5rem;
+  color: blue;
+  text-decoration: none;
+}
+
+#login{
+  margin-top: 40px;
+}
+
+#login h3{
+  font-size: .8rem;
+  color: darkgray;
+}
+
+footer{
+  padding: 10px;
+  background-color: #000;
+}
+
+footer nav{
+  padding: 10px;
+}
+
+footer nav ul{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+footer nav ul li{
+  margin: 5px 20px;
+  color: darkgray;
+}
+
+footer p{
+  text-align: center;
+  color: darkgray;
+  margin: 20px;
+}
+
+@media(max-width: 900px){
+  #main-content{
+    flex-direction: column;
+  }
+
+  #banner{
+    order: 2;
+  }
+
+  main{
+    order: 1;
+    align-items: center;
+  }
+
+  @media(max-width: 400px){
+    #main-box h1{
+      font-size: 2rem;
+    }
+
+    #banner img{
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
